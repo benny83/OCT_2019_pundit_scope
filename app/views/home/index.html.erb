@@ -1,0 +1,14 @@
+<table class="table">
+  <tbody>
+    <tr>
+      <th>Email</th>
+      <th>Role</th>
+    </tr>
+    <% users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= user.admin ? 'Admin' : 'Obychni Pes' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
